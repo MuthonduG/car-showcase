@@ -1,7 +1,7 @@
 export default function Testimonials() {
   return (
-    <div>
+    <section className="section flex items-center bg-cyan-300" id="testimonial">
       Testimonials
-    </div>
+    </section>
   )
 }
