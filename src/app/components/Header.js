@@ -7,8 +7,10 @@ import Searchmobile from "./Searchmobile";
 import { useMediaQuery } from "react-responsive";
 import Logo from '../../../public/icons/logo.svg';
 import { BiMenuAltRight, BiX } from 'react-icons/bi'
+import { SearchContext } from "../context/Search";
 
 export default function Header() {
+  const { setSearchActive } = useContext(SearchContext)
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -24,7 +26,13 @@ export default function Header() {
         setHeader(true)
       } else {
         setHeader(false)
-      }
+      };
+
+      if(window.scrollY > 800) {
+        setSearchActive(true);
+      } else {
+        setSearchActive(false);
+      };
     };
 
     window.addEventListener('scroll', handleScroll)
