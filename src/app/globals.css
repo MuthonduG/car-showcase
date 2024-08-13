@@ -62,7 +62,7 @@
     @apply h-16;
   }
 
-  .bt-cta {
+  .btn-cta {
     @apply bg-primary h-[54px] rounded-[5px] px-4 transition-all duration-300;
   }
 
