@@ -7,7 +7,7 @@ import Searchmobile from "./Searchmobile";
 import { useMediaQuery } from "react-responsive";
 import Logo from '../../../public/icons/logo.svg';
 import { BiMenuAltRight, BiX } from 'react-icons/bi'
-import { SearchContext } from "../context/Search";
+import { SearchContext } from "../context/search";
 
 export default function Header() {
   const { setSearchActive } = useContext(SearchContext)
@@ -66,7 +66,7 @@ export default function Header() {
             <Link className="cursor-pointer" to="cars" activeClass="active" smooth={desktopMode} spy={true}>Cars</Link>
             <Link className="cursor-pointer" to="about" activeClass="active" smooth={desktopMode} spy={true}>About</Link>
             <Link className="cursor-pointer" to="why" activeClass="active" smooth={desktopMode} spy={true}>Why us</Link>
-            <Link className="cursor-pointer" to="testimonials" activeClass="active" smooth={desktopMode} spy={true}>Testimonials</Link>
+            <Link className="cursor-pointer" to="testimonial" activeClass="active" smooth={desktopMode} spy={true}>Testimonials</Link>
             <Link className="cursor-pointer" to="contact" activeClass="active" smooth={desktopMode} spy={true}>Contact</Link>
             <Link className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto" to="/" activeClass="active" smooth={desktopMode} spy={true}>See all cars</Link>
             <Searchmobile/>

@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { SearchContextProvider } from "./context/Search";
+import { SearchContextProvider } from "./context/search";
 
 const inter = Inter({ subsets: ["latin"] });
 
