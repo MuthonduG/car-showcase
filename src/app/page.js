@@ -5,7 +5,7 @@ import Cars from "./components/Cars";
 import About from "./components/About";
 import Why from "./components/Why";
 import Testimonials from "./components/Testimonials";
-import Cta from "./components/Cta";
+import Cta from "./components/Contact";
 import Footer from "./components/Footer";
 import ToTopBtn from "./components/ToTopBtn";
 
@@ -21,8 +21,6 @@ export default function Home() {
       <Cta/>
       <Footer/>
       <ToTopBtn/>
-
-      <div className="h-[4000px]"></div>
     </main>
   );
 }
