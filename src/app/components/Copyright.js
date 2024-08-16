@@ -1,7 +1,7 @@
 export default function Copyright() {
   return (
-    <div>
-      Copyright
+    <div className="text-center py-10 border-t text-sm">
+      Copyright &copy; Carland 2024. All rights reserved.
     </div>
   )
 }
